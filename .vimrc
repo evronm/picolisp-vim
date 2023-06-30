@@ -21,13 +21,12 @@ function! s:PicoLisp()
   syn match PicoLispClass /[+][A-Z]\+\S*/ contained
 
   syn match PicoLispQuote /'/ contained
-  syn match PicoLispAtom /'*\S+/ contained
   syn match PicoLispComment /#.*$/ contained
   syn region PicoLispCommentRegion start="#{" end="}#" contained
   syn region PicoLispString start=/"/ skip=/\\|\"/ end=/"/ contained
   syn region PicoLispStringRaw start=/{$/ end=/$}/ contained
 
-  syn cluster PicoLispList contains=PicoLispStatement,PicoLispQuote,PicoLispVar,PicoLispGlobal,PicoLispClass,PicoLispAtom,PicolispComment,PicoLispCommentRegion,PicoLispString,PicolispStringRaw
+  syn cluster PicoLispList contains=PicoLispStatement,PicoLispQuote,PicoLispVar,PicoLispGlobal,PicoLispClass,PicolispComment,PicoLispCommentRegion,PicoLispString,PicolispStringRaw
 
   hi default link PicoLispComment Comment
   hi default link PicoLispCommentRegion Comment
