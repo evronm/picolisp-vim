@@ -55,12 +55,11 @@ function! s:PicoLisp()
   hi default link PicoLispStatement Statement
   hi default link PicoLispVar Identifier
   hi default link PicoLispGlobal Identifier
-  hi default link PicoLispString String
-  hi default link PicoLispStringRaw String
+  hi default link PicoLispStringRaw PicoLispString
 
-  hi def PicoLispQuote cterm=bold gui=bold
-  hi def PicoLispClass cterm=bold,underline gui=bold,underline
-  hi def String cterm=bold gui=bold ctermfg=white
+  hi def PicoLispQuote cterm=bold gui=bold ctermfg=226 guifg=#ffff00 ctermbg=0 guibg=#000000
+  hi def PicoLispClass ctermfg=33 guifg=#0087ff cterm=bold gui=bold
+  hi def PicoLispString ctermfg=76 guifg=#5fd700 cterm=bold gui=bold 
 
  
 
