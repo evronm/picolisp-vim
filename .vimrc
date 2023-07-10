@@ -61,6 +61,13 @@ function! s:PicoLisp()
   hi def PicoLispClass ctermfg=33 guifg=#0087ff cterm=bold gui=bold
   hi def PicoLispString ctermfg=76 guifg=#5fd700 cterm=bold gui=bold 
 
- 
+  
+  map <F2> mzy%v%:!pil
+P0%a
+
+  map <F3> ("ay%jf>l"by$G?expect
+(%O(a "" b)`z
+  map <F4> ("ay%jv$/->k$"byjf> "cy$G?expect
+(%O(a b c)`z
 
 endfunction
